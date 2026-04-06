@@ -52,7 +52,7 @@
 
 /* ====================GLOBAL SETTINGS======================== */
 *{
-    /* outline: 1px solid black; */
+    outline: 1px solid black;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -189,7 +189,6 @@ section.alt {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-md);
-  align-self: end;
   padding-block: var(--space-2xl);
 }
 
@@ -380,7 +379,8 @@ align-self: auto;
 
  .hero-visual{
     grid-template-columns: 1fr 1fr;
-
+    align-self: end;
+    padding-bottom: 0;
  }
 
 
