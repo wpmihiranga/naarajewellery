@@ -89,6 +89,7 @@ section.alt {
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-soft);
+    overflow: hidden;
 }
 
 
@@ -147,20 +148,21 @@ section.alt {
   grid-template-columns: 1fr 1fr;
   gap: var(--space-md);
 }
-
+/* 
 .hero-card {
   background: var(--color-bg-card); 
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-soft);
   overflow: hidden;
-}
+} */
 
 .hero-card img {
   width: 100%;
   height: 220px;
   object-fit: cover;
   display: block;
+  object-position: center;
 }
 
 .hero-card h3 {
