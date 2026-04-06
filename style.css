@@ -95,14 +95,12 @@ section.alt {
 }
 
 
-/* 
+
 .hero-card {
-  background: var(--color-bg-card); 
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-soft);
-  overflow: hidden;
-} */
+  width:100%;
+
+
+}
 
 
 /* =========================
@@ -167,6 +165,11 @@ section.alt {
   
 }
 
+
+.hero-text h1{
+    /* max-width: 40ch; */
+}
+
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -188,8 +191,9 @@ section.alt {
 .hero-visual {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-md);
-  padding-block: var(--space-2xl);
+  gap: var(--space-lg);
+  
+  /* padding-block: var(--space-2xl); */
 }
 
 
@@ -200,6 +204,8 @@ section.alt {
   display: block;
   object-position: center;
   max-height: 300px;
+  /* height: 250px; */
+position: relative;
 
 }
 
@@ -263,7 +269,7 @@ section.alt {
     
     transition: transform 0.25s ease, 
     box-shadow 0.25s ease, 
-    border-color 0.25s ease;
+    border-color 0.25s ease,
     background-color 0.3s ease;
 
 }
@@ -381,6 +387,7 @@ align-self: auto;
     grid-template-columns: 1fr 1fr;
     align-self: end;
     padding-bottom: 0;
+      gap: 0.75rem;
  }
 
 
