@@ -107,6 +107,14 @@ section.alt {
     display: flex;
 }
 
+.brand-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #2b2118;
+  margin-bottom: 0.6rem;
+}
 
 .hero-grid {
     display: grid;
