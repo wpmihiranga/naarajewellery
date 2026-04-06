@@ -260,6 +260,7 @@ section.alt {
     max-width: 30ch ;
     color: var(--color-text-soft);
     line-height: 1.7;
+    padding-left: 3rem;
 
 }
 
@@ -287,8 +288,8 @@ section.alt {
 
 
 .trust-icon {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2rem;
+  height: 2rem;
   color: var(--color-accent-gold);
   flex-shrink: 0;
 }
