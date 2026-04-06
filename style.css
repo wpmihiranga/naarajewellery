@@ -187,17 +187,21 @@ section.alt {
 
 .hero-visual {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--space-md);
+  align-self: end;
+  padding-block: var(--space-2xl);
 }
 
 
 .hero-card img {
   width: 100%;
-  height: 220px;
+  aspect-ratio: 3/4;
   object-fit: cover;
   display: block;
   object-position: center;
+  max-height: 300px;
+
 }
 
 .hero-card h3 {
@@ -340,6 +344,8 @@ align-self: auto;
     align-items: center;
     gap: 0.4em;
     font-weight: 600;
+    justify-content: start;
+    margin-block: var(--space-xs);
 }
 
 
@@ -350,7 +356,7 @@ align-self: auto;
   width: 1.8em;
   height: 1.8em;
   display: inline-flex;
-transform: translateY(0.06em);  
+  
 }
 
 .wa-icon svg {
@@ -371,6 +377,11 @@ transform: translateY(0.06em);
     grid-template-columns:1fr 1fr ;
  }
 
+
+ .hero-visual{
+    grid-template-columns: 1fr 1fr;
+
+ }
 
 
   
