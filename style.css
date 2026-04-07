@@ -368,29 +368,7 @@ align-self: auto;
   display: block;
 }
 
-/* ==========================media querry======================== */
 
-@media (min-width: 768px) {
-  .hero-grid {
-    grid-template-columns: 1.1fr 1fr;
-    align-items: center;
-  }
-
-  .trust-grid{
-    grid-template-columns:1fr 1fr ;
- }
-
-
- .hero-visual{
-    grid-template-columns: 1fr 1fr;
-    align-self: end;
-    padding-bottom: 0;
-      gap: 0.75rem;
- }
-
-
-  
-}
 
 
 /* =========================
@@ -464,9 +442,46 @@ NAVIGATION
   color: var(--color-accent-maroon);
 }
 
+
+
+
+
+
+
+
+
+
+
+/* ==========================media querry======================== */
 /* DESKTOP */
+
 @media (min-width: 768px) {
-  .menu-toggle {
+  .hero-grid {
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+  }
+
+  .trust-grid{
+    grid-template-columns:1fr 1fr ;
+ }
+
+
+ .hero-visual{
+   grid-template-columns: 1fr 1fr;
+   gap: 1rem;
+ }
+
+
+
+
+  .hero-card:last-child {
+    transform: translateY(2rem);
+  }
+
+
+
+
+   .menu-toggle {
     display: none;
   }
 
@@ -481,4 +496,8 @@ NAVIGATION
     box-shadow: none;
     min-width: auto;
   }
+
+
+
+  
 }
