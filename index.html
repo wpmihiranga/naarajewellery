@@ -15,13 +15,45 @@
 
 
 </head>
+
+
+
 <body>
     
+<!-- NAVIGATION -->
+
+<header class="site-header" id="siteHeader">
+  <div class="container nav-container">
+    <a href="#" class="logo">Naara Jewellery</a>
+
+    <!-- Hamburger -->
+    <button class="menu-toggle" id="menuToggle">
+      ☰
+    </button>
+
+
+    <!-- Menu -->
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#">මුල් පිටුව</a>
+      <a href="#rudraksha">රුද්‍රාක්ෂ</a>
+      <a href="#gems">මැණික් වර්ග</a>
+      <a href="#contact">සම්බන්ධ වන්න</a>
+    </nav>
+  </div>
+</header>
 
 
 
 
     <main>
+
+
+
+
+
+
+
 
         <section class="alt hero">
             
@@ -130,5 +162,37 @@
 
 
     </main>
+
+
+
+
+    <script>
+  const siteHeader = document.getElementById("siteHeader");
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", function () {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      // scrolling down
+      siteHeader.classList.add("hide-nav");
+    } else {
+      // scrolling up
+      siteHeader.classList.remove("hide-nav");
+    }
+
+    lastScrollY = currentScrollY;
+  });
+  
+</script>
+
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("mainNav");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
+</script>
 </body>
 </html>
