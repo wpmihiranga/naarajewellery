@@ -138,7 +138,7 @@ section.alt {
   width: min(100%, var(--container-width));
   margin-inline: auto;
 
-  padding: var(--space-2xl) ;
+  padding: 1rem ;
 }
 
 
@@ -165,7 +165,7 @@ section.alt {
 .trust .container{
     display: flex;
     flex-direction: column;
-    gap:var(--space-2xl);
+    gap:var(--space-xl);
 }
 
 
