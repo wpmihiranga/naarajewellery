@@ -83,7 +83,7 @@ h1, h2, h3 {
 
 
 h1 {
-  font-size: clamp(1rem, 3.5vw, 3.1rem);
+  font-size: clamp(2rem, 3.5vw, 3.1rem);
   line-height: 1.2;
 }
 
@@ -118,18 +118,6 @@ section.alt {
 4. LAYOUT
 ========================= */
 
-
-.nav-container {
-  width: min(100%, var(--container-width));
-  margin-inline: auto;
-  padding-inline: var(--space-2xl);
-  min-height: 72px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
 
 
 
@@ -208,7 +196,7 @@ section.alt {
   color: var(--color-accent-maroon);
   font-weight: 700;
   letter-spacing: 0.04em;
-  font-size: 1.13rem;
+  font-size: 1rem;
 }
 
 .hero-sub {
@@ -424,13 +412,20 @@ NAVIGATION
   transform: translateY(-100%);
 }
 
+
 .nav-container {
+  width: min(100%, var(--container-width));
+  margin-inline: auto;
+  padding-inline: var(--space-2xl);
+  min-height: 72px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 72px;
   position: relative;
 }
+
+
 
 .logo {
   font-family: "Antic Didone", serif;
