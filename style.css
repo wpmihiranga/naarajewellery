@@ -70,11 +70,26 @@ body {
     color: var(--color-text-main);
 }
 
+h1, h2, h3 {
+  font-family: "Antic Didone", serif;
+}
+
+:lang(si) h1,
+:lang(si) h2,
+:lang(si) h3 {
+  font-family: "Noto Sans Sinhala", sans-serif;
+}
+
+
 
 h1 {
   font-size: clamp(1rem, 3.5vw, 3.1rem);
   line-height: 1.2;
 }
+
+
+
+
 
 
 
@@ -102,6 +117,22 @@ section.alt {
 /* =========================
 4. LAYOUT
 ========================= */
+
+
+.nav-container {
+  width: min(100%, var(--container-width));
+  margin-inline: auto;
+  padding-inline: var(--space-2xl);
+  min-height: 72px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+
+
 .container {
   /* width: min(100% - 2rem, var(--container-width)); */
   width: min(100%, var(--container-width));
@@ -402,10 +433,11 @@ NAVIGATION
 }
 
 .logo {
+  font-family: "Antic Didone", serif;
   text-decoration: none;
   color: var(--color-text-main);
-  font-weight: 700;
-  font-size: 1.1rem;
+  font-weight: 400;
+  font-size: 1.9rem;
 }
 
 .menu-toggle {
@@ -450,10 +482,55 @@ NAVIGATION
 
 
 /* FOOTER STYLING  */
+
+
+
+
 .site-footer {
-  background: #2b2118;
+position: relative;
+
+background:
+  radial-gradient(
+    circle at top left,
+    #2b2118 0%,
+    #4a382a 40%,
+    transparent 75%
+  ),
+  radial-gradient(
+    circle at bottom right,
+    #2b2118 0%,
+    #4a382a 40%,
+    transparent 75%
+  ),
+  #7a5a3f;
+
+
+
+
   color: white;
+  
 }
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    #d4af37 20%,
+    #fff3c4 45%,
+    #ffffff 50%,
+    #fff3c4 55%,
+    #d4af37 80%,
+    transparent 100%
+  );
+}
+
 
 /* ROW 1 */
 .footer-top {
@@ -461,6 +538,16 @@ NAVIGATION
   text-align: center;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
+
+
+.footer-top h3 {
+  font-family: "Antic Didone", serif;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+
 
 /* ROW 2 */
 .footer-main {
