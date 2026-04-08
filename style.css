@@ -106,11 +106,12 @@ section.alt {
   /* width: min(100% - 2rem, var(--container-width)); */
   width: min(100%, var(--container-width));
   margin-inline: auto;
+
+  padding: var(--space-2xl) ;
 }
 
 
 .hero {
-    padding: var(--space-2xl);
     /* min-height: 55vh; */
     
     display: flex;
@@ -125,7 +126,6 @@ section.alt {
     align-items: center;
     /* min-height: 45vw; */
     /* gap: 200px; */
-    padding:calc(var(--space-2xl) + 40px) ;
 }
 
 
@@ -453,7 +453,6 @@ NAVIGATION
 .site-footer {
   background: #2b2118;
   color: white;
-  padding: var(--space-2xl);
 }
 
 /* ROW 1 */
